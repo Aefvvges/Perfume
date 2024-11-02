@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --verde: hsl(158, 36%, 37%);
+    --fondo: hsl(28, 38%, 92%);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    background-color: var(--fondo);
+}
+.contenedor{
+    width: 650px;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.imagen img{
+    width: 100%;
+    display: flex;
+}
+.texto{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.categoria{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color:rgb(127, 121, 121);
+}
+.marca{
+    font-family: Fraunces;
+    font-weight: bold;
+    font-size: 2.3rem;
+    line-height: 2.45rem;
+}
+.descripcion{
+    color:rgb(127, 121, 121);
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+.precio-actual{
+    font-family: Fraunces;
+    color: var(--verde);
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.precio-anterior{
+    text-decoration: line-through;
+    color:rgb(127, 121, 121);
+    margin-left: 15px
+}
+.precios{
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
+button img{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:650px) {
+    .contenedor{
+        display: block;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+    .texto{
+        margin-top: 2rem;
+    }
+}
