@@ -79,10 +79,10 @@ button img{
 @media only screen and (max-width:650px) {
     .contenedor{
         display: block;
-        width: 300px;
+        width: 90%;
         padding-bottom: 20px;
     }
-    .texto{
-        margin-top: 2rem;
+    .texto, .precios, .marca, .categoria, button{
+        margin-top: 1rem;
     }
 }
